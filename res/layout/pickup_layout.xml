@@ -1,0 +1,148 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Blanco"
+    android:paddingBottom="6dp" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/relativeLayout1"
+        android:padding="6dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="377dp"
+            android:orientation="vertical"
+            android:padding="6dp" >
+
+            <TextView
+                android:id="@+id/TextView02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="6dp"
+                android:paddingTop="6dp"
+                android:text="Datos del vendedor"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/grisOscuro"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="6dp"
+                android:text="Giorgio Morder"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/grisOscuro" />
+
+            <TextView
+                android:id="@+id/TextView04"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="6dp"
+                android:text="809-363-0033 "
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/grisOscuro" />
+
+            <TextView
+                android:id="@+id/TextView03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="6dp"
+                android:text="Sector: El millon , calle: ccana dulce #2 , Recidencia: Elizabeth V , Apt: 401"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/grisOscuro" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="6dp"
+                android:paddingTop="24dp"
+                android:text="Comentarios"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/grisOscuro"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="6dp"
+                android:text="Comentarios de la aplicacion para el Comentarios de la aplicacion para el Comentarios de la aplicacion para el paquete que van a venir a buscar, comentarios de la aplicacion para el paquete que van a venir a buscar... comentarios de la aplicacion para el paquete que van a venir a buscar, omentarios de la aplicacion para el paquete que van a venir a buscar... "
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/grisOscuro" />
+
+        </LinearLayout>
+        
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:background="@color/grisOscuro"
+        android:gravity="center_vertical"
+        android:padding="6dp" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:padding="6dp"
+            android:src="@drawable/img2" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="11dp"
+            android:layout_toRightOf="@+id/imageView1"
+            android:padding="6dp"
+            android:text="001190293"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/Blanco"
+            android:textColorHint="@color/Blanco"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView1"
+            android:layout_alignLeft="@+id/textView1"
+            android:padding="6dp"
+            android:text="Recoger Paquete"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/grisClaro" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView2"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/round_button"
+            android:gravity="center_horizontal"
+            android:paddingBottom="6dp"
+            android:paddingLeft="32dp"
+            android:paddingRight="32dp"
+            android:paddingTop="6dp"
+            android:text="RECIBIDO"
+            android:textColor="@color/grisBlancoClaro"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</RelativeLayout>

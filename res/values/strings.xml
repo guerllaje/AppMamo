@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MamoApp</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <color name="Blanco">#FFFFFF</color>
+    <color name="grisOscuro">#3A3B38</color>
+     <color name="grisClaro">#CDCFCA</color>
+     <color name="grisBlancoClaro">#F2F5ED</color>
+     
+
+</resources>
