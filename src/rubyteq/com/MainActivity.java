@@ -8,8 +8,11 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.CompoundButton;
 import android.widget.CompoundButton.OnCheckedChangeListener;
+import android.widget.ImageView;
 import android.widget.ToggleButton;
 
+import com.larvalabs.svgandroid.SVG;
+import com.larvalabs.svgandroid.SVGParser;
 public class MainActivity extends Activity {
 
 	private Menu optionsMenu;
@@ -19,26 +22,12 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		ActionBar actionBar = getActionBar();
-		actionBar.setDisplayOptions(ActionBar.DISPLAY_SHOW_HOME
-				| ActionBar.DISPLAY_SHOW_TITLE | ActionBar.DISPLAY_SHOW_CUSTOM);
-
-		boton = (ToggleButton) findViewById(R.id.toggleButton1);
-
-		boton.setOnCheckedChangeListener(new OnCheckedChangeListener() {
-
-			@Override
-			public void onCheckedChanged(CompoundButton buttonView,
-					boolean isChecked) {
-				// TODO Auto-generated method stub
-
-				if (isChecked) {
-					setRefreshActionButtonState(true);
-				} else {
-					setRefreshActionButtonState(false);
-				}
-			}
-		});
+		
+		ImageView imageView = (ImageView)findViewById(R.id.img1);
+        //Parse the SVG file from the resource
+        SVG svg = SVGParser.getSVGFromResource(getResources(), R.drawable.salida);
+        //Get a drawable from the parsed SVG and apply to ImageView
+        imageView.setImageDrawable(svg.createPictureDrawable());
 	}
 
 	public boolean onCreateOptionsMenu(Menu menu) {

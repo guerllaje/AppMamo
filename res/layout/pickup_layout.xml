@@ -51,7 +51,7 @@
                 android:textColor="@color/grisOscuro" />
 
             <TextView
-                android:id="@+id/TextView03"
+                android:id="@+id/TextView03salida"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="6dp"
@@ -87,51 +87,27 @@
     <RelativeLayout
         android:id="@+id/relativeLayout1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="150dp"
         android:layout_alignParentLeft="true"
         android:background="@color/grisOscuro"
         android:gravity="center_vertical"
         android:padding="6dp" >
 
         <ImageView
-            android:id="@+id/imageView1"
+            android:id="@+id/imageView1entrega"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/textView2entrega"
             android:padding="6dp"
             android:src="@drawable/img2" />
 
-        <TextView
-            android:id="@+id/textView1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="11dp"
-            android:layout_toRightOf="@+id/imageView1"
-            android:padding="6dp"
-            android:text="001190293"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textColor="@color/Blanco"
-            android:textColorHint="@color/Blanco"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/imageView1"
-            android:layout_alignLeft="@+id/textView1"
-            android:padding="6dp"
-            android:text="Recoger Paquete"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:textColor="@color/grisClaro" />
-
         <Button
-            android:id="@+id/button1"
+            android:id="@+id/button1salida"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/textView2"
+            android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             android:background="@drawable/round_button"
             android:gravity="center_horizontal"
@@ -143,6 +119,31 @@
             android:textColor="@color/grisBlancoClaro"
             android:textSize="30sp"
             android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView2entrega"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView1entrega"
+            android:layout_centerHorizontal="true"
+            android:padding="6dp"
+            android:text="Recoger Paquete"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/grisClaro" />
+
+        <TextView
+            android:id="@+id/textView1salida"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView2entrega"
+            android:layout_alignLeft="@+id/textView2entrega"
+            android:padding="6dp"
+            android:text="001190293"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/Blanco"
+            android:textColorHint="@color/Blanco"
+            android:textStyle="bold" />
+
     </RelativeLayout>
 
 </RelativeLayout>
